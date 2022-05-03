@@ -9,21 +9,29 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {AppRoutingModule} from "./modules/app-routing.module";
+import { TeachersComponent } from './teachers/pages/teachers/teachers.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatCardModule} from "@angular/material/card";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeachersComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
-    AppRoutingModule
-  ],
+    imports: [
+      BrowserModule,
+      BrowserAnimationsModule,
+      MatToolbarModule,
+      MatButtonModule,
+      MatIconModule,
+      MatSidenavModule,
+      MatListModule,
+      AppRoutingModule,
+      MatGridListModule,
+      MatCardModule,
+      HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
