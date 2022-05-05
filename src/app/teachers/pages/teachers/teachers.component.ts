@@ -17,8 +17,9 @@ export class TeachersComponent implements OnInit {
   }
 
   getAllTeachers() {
-    this.TeachersService.getAll().subscribe( (response: any) => {
-      this.teachers = response;
-    })
+    this.TeachersService.getAll()
+      .subscribe( (response: any) => {
+        this.teachers = response;
+      })
   }
 }
