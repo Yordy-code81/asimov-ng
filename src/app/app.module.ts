@@ -9,10 +9,15 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {AppRoutingModule} from "./modules/app-routing.module";
+import { DashboardComponent } from './dashboard/pages/dashboard/dashboard.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,10 @@ import {AppRoutingModule} from "./modules/app-routing.module";
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
+    MatProgressBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
