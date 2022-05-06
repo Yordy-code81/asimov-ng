@@ -49,3 +49,19 @@ mat-progress-bar {
   height: 40px;
   border-radius: 20px;
 }
+
+@media (max-width: 1000px) {
+  .columns-dashboard {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1500px) {
+  mat-card-title-group {
+    display: flex;
+    flex-direction: column;
+  }
+  mat-progress-bar {
+    width: 400px;
+  }
+}
